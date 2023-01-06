@@ -705,7 +705,8 @@ const UserDefineDescription: FunctionComponent<UserDefineDescriptionProps> =
                 from the receiver to be able to use that pad. This does not
                 convert the output to SBUS, it is inverted CRSF, so CRSF should
                 still be the receiver protocol selected in the flight controller
-                software. ESP-based receivers only.
+                software. ESP-based receivers only. This can lead to bricking rx
+                if the flight controller does not invert the signal.
               </p>
               <p>
                 <DocumentationLink
